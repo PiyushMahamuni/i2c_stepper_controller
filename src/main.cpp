@@ -3,8 +3,11 @@
 #define stepPin PA8
 #define dirPin PA9
 #define enPin PA10
-#define address 3
-#define stepperResolution 0.005 // in meter or radian
+#define address 6 // zt
+// #define address 3 // zr
+// #define address 5 // xt
+// #define address 4 // yt
+#define stepperResolution (1.8 * 0.5 * 3.141592654 * 0.018 / 360) // half stepping
 #define encoderResolution 0.005 // in meter or radian
 #define maxAcceleration 10.0    // in m/s^2 or rad/s^2
 #define maxVelocity 10.0        // in m/s or rad/s

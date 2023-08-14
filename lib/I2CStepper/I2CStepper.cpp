@@ -19,12 +19,12 @@ I2CStepper* I2CStepper::getInstance(uint8_t step_pin, uint8_t dir_pin, uint8_t e
 }
 
 I2CStepper::I2CStepper(uint8_t step_pin, uint8_t dir_pin, uint8_t enable_pin, PinName phA, PinName phB) : 
-  AccelStepper{1, step_pin, dir_pin, 3, 4, false}, enablePin{enable_pin}, phA{phA}, phB{phB}, encoderAttached{true}
+  AccelStepper{1, step_pin, dir_pin}, enablePin{enable_pin}, phA{phA}, phB{phB}, encoderAttached{true}
 {
 }
 
 I2CStepper::I2CStepper(uint8_t step_pin, uint8_t dir_pin, uint8_t enable_pin) :
-  AccelStepper{1, step_pin, dir_pin, 3, 4, false}, enablePin{enable_pin}, encoderAttached{false}
+  AccelStepper{1, step_pin, dir_pin}, enablePin{enable_pin}, encoderAttached{false}
 {
 }
 
